@@ -4,6 +4,6 @@ node{
     }
 
     stage('mvn build') {
-        sh "mvn clean package deploy -Dmaven.skip.test=true"
+        bat "mvn clean package deploy -Dmaven.skip.test=true"
     }
 }
