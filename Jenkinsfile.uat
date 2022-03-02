@@ -1,0 +1,9 @@
+{
+    stage('clone repository') {
+        checkout scm
+    }
+
+    stage('mvn build') {
+        sh "mvn clean package deploy -Dmaven.skip.test=true"
+    }
+}
