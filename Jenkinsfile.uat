@@ -6,4 +6,13 @@ node{
     stage('mvn build') {
         bat "mvn clean package deploy -Dmaven.skip.test=true"
     }
+    stage('build images') {
+
+    }
+    stage('push images') {
+
+    }
+    stage('redeploy K8s') {
+
+    }
 }
